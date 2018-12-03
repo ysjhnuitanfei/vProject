@@ -1,0 +1,33 @@
+reMind (list) {
+      // 获取localStorage对象
+      let isClick = JSON.parse(localStorage.getItem('isClick'))
+      let isReply = JSON.parse(localStorage.getItem('isReply'))
+      // 如果没值
+      if (JSON.stringify(isClick) == 'null') {
+        isClick = {}
+        isReply = {}
+      }
+      list.forEach((item, index) => {
+        // 添加每一项默认为未点击
+        item.isClick = false
+        // 如果localStorage对象不存在当前项
+        if (!isClick.hasOwnProperty(item.id)) {
+          isClick[item.id] = item.isClick
+          isReply[item.id] = item.replyStatus
+          localStorage.setItem('isClick', JSON.stringify(isClick)) // 转为JSON字符串，存储localStorage
+          localStorage.setItem('isReply', JSON.stringify(isReply))
+        } else {
+          // 否则当前item的点击状态isClick取localStorage对象里的数据
+          item.isClick = isClick[item.id]
+        }
+        // 如果localStorage对象里的回复值 != 当前的回复值
+        if (isReply[item.id] != item.replyStatus) {
+          // 则重新赋值localStorage
+          isReply[item.id] = item.replyStatus
+          // 将localStorage及当前列表项设置为未点击状态
+          isClick[item.id] = item.isClick = false
+          localStorage.setItem('isReply', JSON.stringify(isReply))
+          localStorage.setItem('isClick', JSON.stringify(isClick))
+        }
+      })
+    },
