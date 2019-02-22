@@ -63,10 +63,59 @@
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "git.enableSmartCommit": true
 }
+以上为用户配置
+
+{
+    "typescript.check.npmIsInstalled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.formatOnSave": true,
+    "workbench.editor.enablePreview": false,
+    // "emmet.showAbbreviationSuggestions": true,
+    //"emmet.showExpandedAbbreviation": "always",
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        "html",
+        "vue"
+    ],
+    // "vetur.format.defaultFormatter.js": "none",
+    "files.exclude": {
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        // "**/_posts":true,
+        "**/.sass-cache": true,
+        "**/.vscode": true,
+        "**/node_modules": false
+    },
+    "extensions.autoUpdate": true,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "extensions.ignoreRecommendations": false,
+    "vetur.validation.template": false,
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Dracula",
+    "eslint._legacyModuleResolve": false,
+    "git.enableSmartCommit": true
+}
 
 
 git config --global remote.origin.push refs/heads*:refs/for*
-vs添加本地提交推送功能
+vscode添加本地提交推送功能
 
 vue模板配置
 {
@@ -97,4 +146,155 @@ vue模板配置
 		],
 		"description": "Create vue template"
 	}
+}
+
+2019-1-30更新配置：
+{
+    "editor.fontFamily": "Consolas",
+    "editor.smoothScrolling": false,
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "files.autoSave": "off",
+    "explorer.confirmDelete": false,
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "path-intellisense.extensionOnImport": true,
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "workbench.editor.enablePreview": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left",
+    "emojisense.languages": {
+        "markdown": true,
+        "git-commit": false,
+        "plaintext": false,
+        "json": true,
+        "vue": true,
+        "js": true,
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "files.associations": {
+        "*.vue": "vue",
+        "*.mix": "vue",
+        "*.ux": "html",
+        "*.ejs": "html"
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [{
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        },
+        "html",
+        "vue"
+    ],
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_line_length": 120,
+            "wrap_attributes": "auto",
+            "end_with_newline": false
+        }
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "files.exclude": {
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/.sass-cache": true,
+        "**/.vscode": true,
+        "**/node_modules": false
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "extensions.ignoreRecommendations": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "git.enableSmartCommit": true
+}
+
+2019-2-20
+{
+    // "emojisense.languages": {
+    //   "markdown": true,
+    //   "git-commit": false,
+    //   "plaintext": false,
+    //   "json": true,
+    //   "vue": true,
+    //   "js": true,
+    // },
+    "javascript.validate.enable": false,
+    // Place your settings in this file to overwrite the default settings
+    "workbench.iconTheme": "vscode-icons",
+    // "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Monokai",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "path-intellisense.extensionOnImport": true,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "workbench.editor.enablePreview": false,
+    // "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.ts": "none",
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left",
+
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "files.associations": {
+        "*.vue": "vue",
+        "*.mix": "vue",
+        "*.ts": "javascript",
+        "*.ux": "html",
+        "*.ejs": "html"
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [{
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        },
+        "html",
+        "vue"
+    ],
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_line_length": 120,
+            "wrap_attributes": "auto",
+            "end_with_newline": false
+        }
+    },
+    "files.exclude": {
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/.sass-cache": true,
+        "**/.vscode": true,
+        "**/node_modules": false
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "extensions.ignoreRecommendations": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "extensions.autoUpdate": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": false
 }
